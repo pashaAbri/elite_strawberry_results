@@ -17,6 +17,7 @@ Each tweet was labeled by multiple annotators, with the final classification det
 
 ```
 ├── experiments.md                              # Detailed documentation of each experiment
+├── davidson-dataset-distribution.md            # Distribution Results - Classification Distribution Comparison
 ├── confusion_matrices/                         # Visualization of model performance
 │   ├── Anthropic - 3-5-sonnet-20240620.png     # Results from using Anthropic Model
 │   ├── Open AI - gpt_4o_mini.png               # Results from using OpenAI Model
