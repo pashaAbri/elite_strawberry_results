@@ -23,7 +23,9 @@ The 19,225 "valid" entries are distributed as follows:
 - hatespeech: 5,933 entries (30.86%)
 - offensive: 5,478 entries (28.49%)
 
-### Lit Review (Comprehensive Results Comparison)
+### Lit Review Summary (Comprehensive Results Comparison)
+
+Please see [hatexplain-lit-review](hatexplain-lit-review.md) for full details.
 
 ### Three-Class Classification Results
 
@@ -66,8 +68,6 @@ Notes:
 2. Results grouped by classification type and experimental setup
 3. Some models appear in multiple papers with same architecture but different training approaches
 4. Zero-shot results map sentiment polarity to hate speech labels (Negative → Hate/Offensive (0), Positive → Normal (1))
-
-Please see [hatexplain-lit-review](hatexplain-lit-review.md) for details.
 
 ### Annotation Details
 
