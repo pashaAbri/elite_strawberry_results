@@ -92,7 +92,7 @@ and offensive) detection:
 - Anthropic Claude-3-Sonnet (20240620)
 - Meta LLama 3.1 70B
 
-### Experiment Configuration
+### Experiment Configuration + Results
 
 Each experiment tracks multiple parameters:
 
@@ -101,3 +101,15 @@ Each experiment tracks multiple parameters:
 - Use of annotator rationales
 - Inclusion of target categories
 - Consideration of annotator agreement levels
+
+## Results
+
+Please see [hatexplain-experiments.md](hatexplain-experiments.md) for full details.
+
+### Experiment 3 - Summary Results (at 0.35 threshold)
+
+| Model           | Accuracy | Precision | Recall | F1 Score |
+|-----------------|----------|-----------|--------|----------|
+| Claude-3-Sonnet | 0.732    | 0.715     | 0.906  | 0.799    |
+| GPT-4-mini      | 0.701    | 0.704     | 0.848  | 0.769    |
+| LLama 3.1 70B   | 0.694    | 0.681     | 0.904  | 0.777    |
