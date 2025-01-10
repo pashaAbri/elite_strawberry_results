@@ -44,6 +44,8 @@
 | Exp 13.3             | XLNET - base                                     | 0.3141   | 0.3092   | 0.4897 |                    |
 | Exp 13.3             | XLNET - EnsembleSpaceModel                       | 0.5138   | 0.4722   | 0.6834 |                    |
 
+Please see [hatexplain-experiments.md](hatexplain-experiments.md) for full details. (In-Progress)
+
 ## Dataset Overview
 
 The [HateXplain dataset](https://paperswithcode.com/dataset/hatexplain) is a collection of annotated texts from Twitter
@@ -143,9 +145,3 @@ Each experiment tracks multiple parameters:
 - Use of annotator rationales
 - Inclusion of target categories
 - Consideration of annotator agreement levels
-
-## Results
-
-Please see [hatexplain-experiments.md](hatexplain-experiments.md) for full details.
-
-
