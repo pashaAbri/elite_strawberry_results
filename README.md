@@ -2,6 +2,48 @@
 
 # HateXplain Dataset Analysis
 
+## Results Summary
+
+### Binary (2-Class) Evaluation
+
+| Model                                             | Accuracy | Precision | Recall | F1 Score |
+|---------------------------------------------------|----------|-----------|--------|----------|
+| Space Model (BERT)                                | 0.8110   | 0.8227    | 0.7899 | 0.8108   |
+| Space Model (XLNet)                               | 0.8798   | 0.8764    | 0.8824 | 0.8797   |
+| Exp3 Zero Shot - 0.35 threshold - Claude-3-Sonnet | 0.732    | 0.715     | 0.906  | 0.799    |
+| Exp3 Zero Shot - 0.35 threshold - GPT-4-mini      | 0.701    | 0.704     | 0.848  | 0.769    |
+| Exp3 Zero Shot - 0.35 threshold - LLama 3.1 70B   | 0.694    | 0.681     | 0.904  | 0.777    |
+
+### Binary (3-Class) Evaluation
+
+| Paper                | Model              | Accuracy | Macro F1 | AUROC | Precision | Recall |
+|----------------------|--------------------|----------|----------|-------|-----------|--------|
+| HateXplain (2020)    | BERT-HateXplain    | 0.698    | 0.687    | 0.851 | -         | -      |
+| MRP (2022)           | BERT-MRP           | 0.704    | 0.699    | 0.862 | -         | -      |
+| Breaking Free (2024) | Space Model (BERT) | 0.5296   | 0.4304   | -     | 0.5431    | 0.5296 |
+| Breaking Free (2024) | BERT               | 0.4485   | 0.3314   | -     | 0.4471    | 0.4485 |
+
+| Experiment           | Model                                            | Accuracy | Macro F1 | AUROC  | Notes              |
+|----------------------|--------------------------------------------------|----------|----------|--------|--------------------|
+| Exp 9                | Llama 8.1 8B - base                              | 0.332    | 0.35     | -      |                    |
+| Exp 9                | Llama 8.1 8B - fine tuned                        | 0.700    | 0.68     | -      |                    |
+| Exp 9.1              | Llama 8.1 8B Instruct - base                     | 0.426    | 0.44     | -      |                    |
+| Exp 9.1              | Llama 8.1 8B Instruct - fine tuned               | 0.704    | 0.69     | -      | 1 epoch            |
+| Exp 9.2              | Llama 8.1 8B Instruct - base                     | 0.436    | 0.45     | -      |                    |
+| Exp 9.2              | Llama 8.1 8B Instruct - fine tuned               | 0.708    | 0.69     | -      | 3 epochs           |
+| Exp 10               | Llama 8.1 8B Instruct - base                     | 0.493    | 0.48     | -      |                    |
+| Exp 10               | Llama 8.1 8B Instruct - fine tuned               | 0.634    | 0.61     | -      |                    |
+| Exp 11.1             | Llama 8.1 8B Instruct - fine tuned               | 0.398    | 0.33     | -      | with probabilities |
+| Exp 11.2             | Llama 8.1 8B Instruct - fine tuned               | 0.475    | 0.44     | -      | with probabilities |
+| Exp 12               | Llama 8.1 8B - SequenceClassification - base     | 0.3136   | 0.5101   | 0.8796 |                    |
+| Exp 12.1             | Llama 8.1 8B - SequenceClassification - finetune | 0.5913   | 0.5101   | 0.8241 |                    |
+| Exp 12.2             | Llama 8.1 8B - SequenceClassification - finetune | 0.4831   | 0.3588   | 0.7523 |                    |
+| Exp 13               | BERT - base                                      | 0.3136   | 0.1894   | 0.5257 |                    |
+| Exp 13.1             | BERT - EnsembleSpaceModel                        | 0.4878   | 0.3729   | 0.6891 | 5 epochs           |
+| Exp 13.2             | BERT - EnsembleSpaceModel                        | 0.4706   | 0.3747   | 0.6861 | 20 epochs          |
+| Exp 13.3             | XLNET - base                                     | 0.3141   | 0.3092   | 0.4897 |                    |
+| Exp 13.3             | XLNET - EnsembleSpaceModel                       | 0.5138   | 0.4722   | 0.6834 |                    |
+
 ## Dataset Overview
 
 The [HateXplain dataset](https://paperswithcode.com/dataset/hatexplain) is a collection of annotated texts from Twitter
@@ -106,10 +148,4 @@ Each experiment tracks multiple parameters:
 
 Please see [hatexplain-experiments.md](hatexplain-experiments.md) for full details.
 
-### Experiment 3 - Summary Results (at 0.35 threshold)
 
-| Model           | Accuracy | Precision | Recall | F1 Score |
-|-----------------|----------|-----------|--------|----------|
-| Claude-3-Sonnet | 0.732    | 0.715     | 0.906  | 0.799    |
-| GPT-4-mini      | 0.701    | 0.704     | 0.848  | 0.769    |
-| LLama 3.1 70B   | 0.694    | 0.681     | 0.904  | 0.777    |
