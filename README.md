@@ -23,26 +23,27 @@
 | Breaking Free (2024) | Space Model (BERT) | 0.5296   | 0.4304   | -     | 0.5431    | 0.5296 |
 | Breaking Free (2024) | BERT               | 0.4485   | 0.3314   | -     | 0.4471    | 0.4485 |
 
-| Experiment           | Model                                            | Accuracy | Macro F1 | AUROC  | Notes              |
-|----------------------|--------------------------------------------------|----------|----------|--------|--------------------|
-| Exp 9                | Llama 8.1 8B - base                              | 0.332    | 0.35     | -      |                    |
-| Exp 9                | Llama 8.1 8B - fine tuned                        | 0.700    | 0.68     | -      |                    |
-| Exp 9.1              | Llama 8.1 8B Instruct - base                     | 0.426    | 0.44     | -      |                    |
-| Exp 9.1              | Llama 8.1 8B Instruct - fine tuned               | 0.704    | 0.69     | -      | 1 epoch            |
-| Exp 9.2              | Llama 8.1 8B Instruct - base                     | 0.436    | 0.45     | -      |                    |
-| Exp 9.2              | Llama 8.1 8B Instruct - fine tuned               | 0.708    | 0.69     | -      | 3 epochs           |
-| Exp 10               | Llama 8.1 8B Instruct - base                     | 0.493    | 0.48     | -      |                    |
-| Exp 10               | Llama 8.1 8B Instruct - fine tuned               | 0.634    | 0.61     | -      |                    |
-| Exp 11.1             | Llama 8.1 8B Instruct - fine tuned               | 0.398    | 0.33     | -      | with probabilities |
-| Exp 11.2             | Llama 8.1 8B Instruct - fine tuned               | 0.475    | 0.44     | -      | with probabilities |
-| Exp 12               | Llama 8.1 8B - SequenceClassification - base     | 0.3136   | 0.5101   | 0.8796 |                    |
-| Exp 12.1             | Llama 8.1 8B - SequenceClassification - finetune | 0.5913   | 0.5101   | 0.8241 | 1 epoch            |
-| Exp 12.2             | Llama 8.1 8B - SequenceClassification - finetune | 0.4831   | 0.3588   | 0.7523 | 2 epochs           |
-| Exp 13               | BERT - base                                      | 0.3136   | 0.1894   | 0.5257 |                    |
-| Exp 13.1             | BERT - EnsembleSpaceModel                        | 0.4878   | 0.3729   | 0.6891 | 5 epochs           |
-| Exp 13.2             | BERT - EnsembleSpaceModel                        | 0.4706   | 0.3747   | 0.6861 | 20 epochs          |
-| Exp 13.3             | XLNET - base                                     | 0.3141   | 0.3092   | 0.4897 |                    |
-| Exp 13.3             | XLNET - EnsembleSpaceModel                       | 0.5138   | 0.4722   | 0.6834 |                    |
+| Experiment | Model                                            | Accuracy | Macro F1 | AUROC  | Notes              |
+|------------|--------------------------------------------------|----------|----------|--------|--------------------|
+| Exp 9      | Llama 8.1 8B - base                              | 0.332    | 0.35     | -      |                    |
+| Exp 9      | Llama 8.1 8B - fine tuned                        | 0.700    | 0.68     | -      |                    |
+| Exp 9.1    | Llama 8.1 8B Instruct - base                     | 0.426    | 0.44     | -      |                    |
+| Exp 9.1    | Llama 8.1 8B Instruct - fine tuned               | 0.704    | 0.69     | -      | 1 epoch            |
+| Exp 9.2    | Llama 8.1 8B Instruct - base                     | 0.436    | 0.45     | -      |                    |
+| Exp 9.2    | Llama 8.1 8B Instruct - fine tuned               | 0.708    | 0.69     | -      | 3 epochs           |
+| Exp 10     | Llama 8.1 8B Instruct - base                     | 0.493    | 0.48     | -      |                    |
+| Exp 10     | Llama 8.1 8B Instruct - fine tuned               | 0.634    | 0.61     | -      |                    |
+| Exp 11.1   | Llama 8.1 8B Instruct - fine tuned               | 0.398    | 0.33     | -      | with probabilities |
+| Exp 11.2   | Llama 8.1 8B Instruct - fine tuned               | 0.475    | 0.44     | -      | with probabilities |
+| Exp 12     | Llama 8.1 8B - SequenceClassification - base     | 0.3136   | 0.5101   | 0.8796 |                    |
+| Exp 12.1   | Llama 8.1 8B - SequenceClassification - finetune | 0.5913   | 0.5101   | 0.8241 | 1 epoch            |
+| Exp 12.2   | Llama 8.1 8B - SequenceClassification - finetune | 0.4831   | 0.3588   | 0.7523 | 2 epochs           |
+| Exp 13     | BERT - base                                      | 0.3136   | 0.1894   | 0.5257 |                    |
+| Exp 13.1   | BERT - EnsembleSpaceModel                        | 0.4878   | 0.3729   | 0.6891 | 5 epochs           |
+| Exp 13.2   | BERT - EnsembleSpaceModel                        | 0.4706   | 0.3747   | 0.6861 | 20 epochs          |
+| Exp 13.3   | XLNET - base                                     | 0.3141   | 0.3092   | 0.4897 |                    |
+| Exp 13.3   | XLNET - EnsembleSpaceModel                       | 0.5138   | 0.4722   | 0.6834 |                    |
+| Exp 13.4   | XLNET - EnsembleSpaceModel                       | -        | -        | -      | in-progress        |
 
 Please see [hatexplain-experiments.md](hatexplain-experiments.md) for full details. (In-Progress)
 
